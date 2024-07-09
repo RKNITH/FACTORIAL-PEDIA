@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactorialPedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>FactorialPedia</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Factorials</h2>
+            <p>The factorial of a non-negative integer <em>n</em>, denoted by <em>n!</em>, is the product of all
+                positive integers less than or equal to <em>n</em>. For example:</p>
+            <p>5! = 5 × 4 × 3 × 2 × 1 = 120</p>
+            <p>0! is defined to be 1.</p>
+            <h3>Origin of Factorials</h3>
+            <p>The concept of factorials originated from permutations and combinations in mathematics. The notation
+                <em>n!</em> was introduced by the French mathematician Christian Kramp in 1808.</p>
+            <h3>Relation to the Gamma Function</h3>
+            <p>The factorial function is closely related to the Gamma function, denoted by Γ(n). For positive integers,
+                the Gamma function is defined as:</p>
+            <p>Γ(n) = (n-1)!</p>
+            <p>The Gamma function extends the factorial function to real and complex numbers, except for negative
+                integers.</p>
+            <h3>Factorial of Fractions and Negative Numbers</h3>
+            <p>For non-integer values, the factorial function can be computed using the Gamma function. For example:</p>
+            <p>Γ(1/2) = √π</p>
+            <p>Therefore, (1/2)! = √π</p>
+            <p>For negative numbers, the factorial is undefined, but the Gamma function can be used for non-integer
+                negative values.</p>
+            <h3>Applications of Factorials</h3>
+            <p>Factorials have various applications in different fields of mathematics and science:</p>
+            <ul>
+                <li><strong>Combinatorics:</strong> Factorials are used to count the number of ways to arrange or select
+                    items. For example, the number of ways to arrange <em>n</em> distinct items is <em>n!</em>.</li>
+                <li><strong>Probability:</strong> Factorials are used in probability theory to calculate permutations
+                    and combinations, which are essential for determining the likelihood of events.</li>
+                <li><strong>Algebra:</strong> Factorials appear in the coefficients of binomial expansions, such as in
+                    the binomial theorem.</li>
+                <li><strong>Calculus:</strong> Factorials are used in the Taylor series expansion of functions, which is
+                    a way to approximate functions with polynomials.</li>
+                <li><strong>Computer Science:</strong> Factorials are used in algorithms and complexity analysis,
+                    particularly in problems involving permutations and combinations.</li>
+            </ul>
+            <h3>Research Related to Factorials</h3>
+            <p>Current research on factorials involves exploring their properties and applications in various fields.
+                Some areas of research include:</p>
+            <ul>
+                <li><strong>Generalizations:</strong> Extending the concept of factorials to non-integer and complex
+                    numbers using the Gamma function and other special functions.</li>
+                <li><strong>Algorithm Optimization:</strong> Developing efficient algorithms for computing factorials,
+                    particularly for large values of <em>n</em>.</li>
+                <li><strong>Statistical Mechanics:</strong> Applying factorials in statistical mechanics to study the
+                    behavior of large systems of particles.</li>
+                <li><strong>Quantum Computing:</strong> Investigating the role of factorials in quantum algorithms and
+                    information theory.</li>
+            </ul>
+        </section>
+
+        <section id="calculator">
+            <h2>Factorial Calculator</h2>
+            <label for="numberInput">Enter a number:</label>
+            <input type="number" id="numberInput" min="0" placeholder="Enter number">
+            <button onclick="calculateFactorial()">Calculate</button>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> FactorialPedia</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
